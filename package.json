@@ -1,5 +1,6 @@
 {
-    "name": "lib",
+    "name": "lib-select-oc-p14",
+    "version": "1.0.0",
     "workspaces": [
         "packages/*"
     ]
