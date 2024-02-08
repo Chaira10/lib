@@ -61,7 +61,7 @@ Consultez notre storybook pour voir des exemples d'utilisation et d'interactions
 
 ## Contributeurs
 
-Chaira M
+C M
 
 ## Licence
 
