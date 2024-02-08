@@ -1,6 +1,15 @@
 {
-    "name": "lib-select-oc-p14",
+    "name": "lib-select-oc",
     "version": "1.0.0",
+    "main": "./packages/select/dist/main.js",
+    "module": "./packages/select/dist/module.js",
+    "exports": {
+      ".": {
+        "import": "./packages/select/dist/select.es.js",
+        "require": "./packages/select/dist/select.umd.js"
+      },
+      "./style.css": "./packages/select/dist/style.css"
+    },
     "workspaces": [
         "packages/*"
     ]
