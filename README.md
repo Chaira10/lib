@@ -1,12 +1,12 @@
-# lib-select-oc-p14
+# lib-select-oc
 
-lib-select-oc-p14 est une bibliothèque de composants React permettant de créer facilement des éléments de sélection (select) personnalisés dans vos applications web.
+lib-select-oc est une bibliothèque de composants React permettant de créer facilement des éléments de sélection (select) personnalisés dans vos applications web.
 
 ## Installation
 
-Vous pouvez installer lib-select-oc-p14 via npm en exécutant la commande suivante :
+Vous pouvez installer lib-select-oc via npm en exécutant la commande suivante :
 
-`npm install lib-select-oc-p14` ,
+`npm install lib-select-oc` ,
 
 ## Utilisation
 
@@ -15,7 +15,7 @@ Pour utiliser le composant Select dans votre application React, importez-le et i
 ```javascript
 
 `import React, { useState } from 'react';
-import { Select } from 'lib-select-oc-p14';
+import { Select } from 'lib-select-oc';
 
 function Select() {
   const [selectedOption, setSelectedOption] = useState('');

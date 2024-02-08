@@ -1,8 +1,68 @@
-# React + Vite
+# lib-select-oc
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+lib-select-oc est une bibliothèque de composants React permettant de créer facilement des éléments de sélection (select) personnalisés dans vos applications web.
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Vous pouvez installer lib-select-oc via npm en exécutant la commande suivante :
+
+`npm install lib-select-oc` ,
+
+## Utilisation
+
+Pour utiliser le composant Select dans votre application React, importez-le et intégrez-le à votre code comme suit :
+
+```javascript
+
+`import React, { useState } from 'react';
+import { Select } from 'lib-select-oc';
+
+function Select() {
+  const [selectedOption, setSelectedOption] = useState('');
+
+  const options = ["Option 1", "Option 2", "Option 3"];
+
+  const handleSelectChange = (event) => {
+    setSelectedOption(event.target.value);
+  };
+
+  return (
+    <div>
+      <h1>Exemple d'utilisation du composant Select</h1>
+      <Select
+        id="example-select"
+        value={selectedOption}
+        onChange={handleSelectChange}
+        placeholder="Sélectionnez une option"
+        options={options}
+        name="example-select"
+      />
+    </div>
+  );
+}
+
+export default Select;` 
+```
+
+## Props
+
+Le composant Select accepte les props suivantes :
+
+- `id`: Identifiant unique du composant.
+- `value`: Valeur sélectionnée du composant.
+- `onChange`: Fonction de rappel appelée lorsqu'une nouvelle valeur est sélectionnée.
+- `placeholder`: Texte de l'option de placeholder.
+- `options`: Tableau des options disponibles pour la sélection.
+- `name`: Nom du composant.
+
+## Exemple
+
+Consultez notre storybook pour voir des exemples d'utilisation et d'interactions avec le composant Select.
+
+## Contributeurs
+
+C M
+
+## Licence
+
+Ce projet est sous licence MIT.
